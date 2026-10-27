@@ -1,0 +1,45 @@
+#pragma once
+
+#define USER_SETUP_INFO "ESP32_WROOM_ILI9341_240x320"
+
+#define ILI9341_DRIVER
+
+#ifndef HANDHELD_TFT_MISO
+  #define HANDHELD_TFT_MISO 19
+#endif
+#ifndef HANDHELD_TFT_MOSI
+  #define HANDHELD_TFT_MOSI 23
+#endif
+#ifndef HANDHELD_TFT_SCLK
+  #define HANDHELD_TFT_SCLK 18
+#endif
+#ifndef HANDHELD_TFT_CS
+  #define HANDHELD_TFT_CS 5
+#endif
+#ifndef HANDHELD_TFT_DC
+  #define HANDHELD_TFT_DC 2
+#endif
+#ifndef HANDHELD_TFT_RST
+  #define HANDHELD_TFT_RST 4
+#endif
+#ifndef HANDHELD_TFT_BL
+  #define HANDHELD_TFT_BL 21
+#endif
+
+#define TFT_MISO HANDHELD_TFT_MISO
+#define TFT_MOSI HANDHELD_TFT_MOSI
+#define TFT_SCLK HANDHELD_TFT_SCLK
+#define TFT_CS   HANDHELD_TFT_CS
+#define TFT_DC   HANDHELD_TFT_DC
+#define TFT_RST  HANDHELD_TFT_RST
+#define TFT_BL   HANDHELD_TFT_BL
+
+#define TFT_BACKLIGHT_ON HIGH
+
+#define LOAD_GLCD
+#define LOAD_FONT2
+#define SMOOTH_FONT
+
+#define SPI_FREQUENCY  40000000
+#define SPI_READ_FREQUENCY  20000000
+
